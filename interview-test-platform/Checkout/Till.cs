@@ -106,12 +106,12 @@ namespace Checkout
             items = items.ToUpper();
             foreach (var item in items)
             {
-                if (!items.Contains(items))
-                {
-                    // Error if the user makes a wrong selection
-                    Console.WriteLine(string.Format("Item {0} doesn't exist", item));
-                    continue;
-                }
+                // if (!items.Contains(items))
+                // {
+                //     // Error if the user makes a wrong selection
+                //     Console.WriteLine(string.Format("Item {0} doesn't exist", item));
+                //     continue;
+                // }
 
                 _items[item]++;
             }
