@@ -48,10 +48,8 @@ namespace Checkout
 
         static double AddItemD(double total, KeyValuePair<char, int> item)
         {
-            if (item.Key.Equals('D'))
-            {
-                total += 15 * item.Value;
-            }
+
+            total += 15 * item.Value;
 
             return total;
         }
@@ -63,7 +61,7 @@ namespace Checkout
             {
                 Console.WriteLine("Maximum of 6 items allowed");
             }
-            else if (item.Key.Equals('C'))
+            else
             {
                 total += 20 * item.Value;
             }
